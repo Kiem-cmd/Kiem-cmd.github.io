@@ -76,7 +76,7 @@ $$posterior = \frac{likelihood * prior}{evident} <=> p(\mu|x) =  \frac{p(x|\mu) 
 * Và phân phối mà chúng ta lựa chọn đó là Beta Distribution. Lí do bởi vì đó là *Conjugacy* (liên hợp) của Bernouli distribution. *Conjugacy* của $p(a)$ là $p(b)$ sao cho $p(a) * p(b) ~ p(a)$. Nghĩa là nếu chọn $prior$ là beta distribution thì $posterior$ sẽ có cùng dạng với likehood từ đó dễ maximum hơn.
 
 * Hàm xác suất của beta distribution: 
-$$\Beta(\mu|\beta) = \frac{1}{\beta}\mu^{a-1}(1-\mu)^{b-1}$$
+$$Beta(\mu|\beta) = \frac{1}{\beta}\mu^{a-1}(1-\mu)^{b-1}$$
 
 >trong đó $1/\beta$ là để chuẩn hóa còn a và b là các hyperparameter do chúng ta chọn dựa vào dữ liệu ban đầu.
 
@@ -90,7 +90,7 @@ $$var[\mu] = \frac{ab}{(a+b)^2(a+b+1)}$$
 
 Từ công thức Bayes ta có : 
 
-$p(\mu|m,l,a,b) $ ~$Bin(m,l|\mu).Beta(\mu|a,b)$ ~ $\mu^{m+ a -1}(1-\mu)^{l+b-1}$
+$$p(\mu|m,l,a,b)\text{ } \alpha\text{ } Bin(m,l|\mu).Beta(\mu|a,b)\text{ } \alpha\text{ } \mu^{m+ a -1}(1-\mu)^{l+b-1}$$
 
 * Giải thích đơn giản về a và b là sự hiệu quả của số quan sát $x = 1$ và $x = 0$ 
 * Với mỗi dữ liệu mới thì a và b sẽ được update 
