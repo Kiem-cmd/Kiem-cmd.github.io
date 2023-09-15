@@ -3,6 +3,8 @@ title: 2.1 Binary Distribution
 tags: [chap2]
 math: true
 --- 
+
+
 ### 1. Bernouli Distribution 
 
 Chúng ta sẽ xem sét single binary random variable  $x \in \{0,1\}$. Ở đây $x $ có thể là sự kiện khi tung mặt coin, với $x = 1$ thì là "heads" và $x=0$ là "tails"
@@ -46,7 +48,7 @@ Ta có thể tính được *mean* và *var* của phân phối nhị thức nh�
 >$\Large \mathbb{E}[m] = \sum_{m=0}^Nm.Bin(m|N\mu) = N\mu $
 
 >$\Large var[m] = \sum_{m=0}^N(m-\mathbb{E}[m])^2.Bin(m|N,\mu)=N.\mu(1-\mu)$
-![Alt text](image.png)
+![Alt text](/assets/lib/image/image.png)
 
 Đây là histogram của binomial distribution với N = 10 và $\mu = 0.25$
 ### 3. Beta distribution 
@@ -65,7 +67,7 @@ Hàm xác suất của beta distribution:
 >$\Large Beta(\mu|\beta) = \frac{1}{\beta}\mu^{a-1}(1-\mu)^{b-1}$
 >trong đó $1/\beta$ là để chuẩn hóa còn a và b là các hyperparameter do chúng ta chọn dựa vào dữ liệu ban đầu.
 
-![Alt text](image-1.png)
+![Alt text](/assets/lib/image/image-1.png)
 Một vài hình ảnh của beta distribution
 
 *Mean* và *Var* của beta distribution : 
