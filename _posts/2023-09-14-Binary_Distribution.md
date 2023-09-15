@@ -85,6 +85,7 @@ $$Beta(\mu|\beta) = \frac{1}{\beta}\mu^{a-1}(1-\mu)^{b-1}$$
 _Một vài hình ảnh của beta distribution_
 
 * *Mean* và *Var* của beta distribution : 
+
 $$\mathbb{E}[\mu] = \frac{a}{a+b}$$
 
 $$var[\mu] = \frac{ab}{(a+b)^2(a+b+1)}$$
